@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="vertical"
+    >
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="?android:listDivider"
+
+
+></View>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    >
+
+<LinearLayout
+    android:id="@+id/ll_home"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="3dp"
+
+    >
+
+    <ImageView
+        android:id="@+id/iv_home"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/home_nomal"
+
+
+        />
+    <TextView
+        android:id="@+id/tv_home"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首页"
+        android:textColor="@color/home_back_unselected"
+        android:textSize="15sp"
+        android:gravity="center"
+        />
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/ll_touzi"
+        >
+
+        <ImageView
+            android:id="@+id/iv_touzi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/touzi_nomal"
+
+
+            />
+        <TextView
+            android:id="@+id/tv_touzi"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我要投资"
+            android:textColor="@color/home_back_unselected"
+            android:textSize="15sp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_more"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/more_nomal"
+
+
+            />
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多"
+            android:textColor="@color/home_back_unselected"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_me"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/iv_me"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/menomal"
+
+
+            />
+        <TextView
+            android:id="@+id/tv_me"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的资产"
+            android:textColor="@color/home_back_unselected"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

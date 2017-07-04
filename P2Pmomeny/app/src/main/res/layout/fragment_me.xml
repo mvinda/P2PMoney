@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_top"/>
+
+    <p2pmomeny.p2pmomeny.ui.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:background="@android:color/darker_gray"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/icon_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/my_user_default"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon_time"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Hi,welcome!"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/holo_blue_bright"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="账户余额(元)"
+                    android:textColor="#a000"
+                    />
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:text="30"
+                    android:textSize="50dp"
+                    android:layout_margin="10dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/chongzhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="9dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/my_recharge_bg"/>
+
+                <ImageView
+                    android:id="@+id/tixian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_toRightOf="@id/chongzhi"
+                    android:layout_weight="1"
+                    android:src="@drawable/my_withdraw_bg"/>
+            </LinearLayout>
+
+            <!--充分使用textview属性代替简单LinearLayout布局-->
+            <TextView
+                android:id="@+id/ll_touzi"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/my_invest_manage"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/right"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="投资收益管理"
+                android:textColor="@color/product_detail_common"
+                android:textSize="13sp"/>
+
+
+
+            <TextView
+                android:id="@+id/ll_zichang"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/my_asset_manage"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/right"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="资产成分管理"
+                android:textColor="@color/product_detail_common"
+                android:textSize="13sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ll_anquan"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/my_acount_safety"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/right"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="账户安全保护"
+                android:textColor="@color/product_detail_common"
+                android:textSize="13sp"/>
+                <ToggleButton
+                    android:checked="false"
+                    android:id="@+id/tb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/toggle_btn"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textOff=""
+                    android:textOn=""
+                    android:button="@null"
+
+
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </p2pmomeny.p2pmomeny.ui.MyScrollView>
+
+</LinearLayout>
